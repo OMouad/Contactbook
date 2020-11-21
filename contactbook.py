@@ -77,3 +77,7 @@ def function():
         return()
     else:
         print("\nEnter a valid value !\n")
+    function()
+
+
+function()
