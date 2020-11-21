@@ -75,3 +75,5 @@ def function():
             print("No contact found!")
     elif choice1 == "x":
         return()
+    else:
+        print("\nEnter a valid value !\n")
