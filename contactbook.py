@@ -15,5 +15,8 @@ def cleanword(n):
     n = n.strip()
     return(n)
 
+print("Hello!")
 
 def function():
+    choice1 = (str(input(
+        "If you want to :\nShow contact: Enter 1\nAdd a contact: Enter 2\nRemove a contact: Enter 3\nUpdate a contact: Enter 4\nShow a summary of all contacts: Enter 5\nClose the contact book app: Press x :\n")))
