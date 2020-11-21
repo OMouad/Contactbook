@@ -31,3 +31,19 @@ def function():
                   "\n" + "Email: " + contactlist[firstname]["email"] + "\n" + "Phone number : " + contactlist[firstname]["number"] + "\n")
         else:
             print("No contact found!")
+    elif choice1 == "2":
+        contactbookopen = open("contactbook.pkl", 'wb')
+        firstname = cleanword(
+            str(input("Enter the first name of the contact: ")))
+        lastname = cleanword(
+            str(input("Enter the last name of the contact: ")))
+        email = cleanword(str(input("Enter the email of the contact: ")))
+        number = cleanword(str(input("Enter the number of the contact: ")))
+        contactlist[firstname] = {}
+        contactlist[firstname]["firstname"] = firstname
+        contactlist[firstname]["lastname"] = lastname
+        contactlist[firstname]["email"] = email
+        contactlist[firstname]["number"] = number
+        pickle.dump(contactlist, contactbookopen)
+        contactbookopen.close()
+        print("The contact was successfully added")
