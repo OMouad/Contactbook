@@ -65,3 +65,11 @@ def function():
         contactlist[firstname][properties[choice2]] = newvalue
 
         print("The update was successfully saved")
+    elif choice1 == "5":
+        if len(contactlist) != 0:
+            print("\nThe saved contacts are :")
+            for x in contactlist:
+                print(x, contactlist[x]["lastname"])
+            print(" ")
+        else:
+            print("No contact found!")
