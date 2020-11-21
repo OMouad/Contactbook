@@ -73,3 +73,5 @@ def function():
             print(" ")
         else:
             print("No contact found!")
+    elif choice1 == "x":
+        return()
