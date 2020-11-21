@@ -69,7 +69,8 @@ def function():
         if len(contactlist) != 0:
             print("\nThe saved contacts are :")
             for x in contactlist:
-                print(x, contactlist[x]["lastname"])
+                print(x, contactlist[x]["lastname"],
+                      contactlist[x]["email"], contactlist[x]["number"])
             print(" ")
         else:
             print("No contact found!")
