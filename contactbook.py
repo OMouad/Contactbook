@@ -53,3 +53,15 @@ def function():
             str(input("Enter the first name of the contact: ")))
         del contactlist[firstname]
         print("The contact was successfully deleted")
+    elif choice1 == "4":
+        contactbookopen = open("contactbook.pkl", 'wb')
+        firstname = cleanword(
+            str(input("Enter the first name of the contact: ")))
+        choice2 = cleanword(str(input(
+            "If you want to update :\nThe contact's first name : Enter 1\nThe contact's last name : Enter 2\nThe contact's email: Enter 3\nThe contact's phone number: Enter 4")))
+        choice2 = int(choice2)
+        newvalue = cleanword(
+            str(input("Please enter the new "+properties[choice2]+" ")))
+        contactlist[firstname][properties[choice2]] = newvalue
+
+        print("The update was successfully saved")
