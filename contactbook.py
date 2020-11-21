@@ -3,6 +3,7 @@ import os
 
 filesize = os.path.getsize("contactbook.pkl")
 contactbookread = open("contactbook.pkl", 'rb')
+properties = [0, "firstname", "lastname", "email", "number"]
 
 if filesize == 0:
     contactlist = {}
@@ -15,7 +16,9 @@ def cleanword(n):
     n = n.strip()
     return(n)
 
+
 print("Hello!")
+
 
 def function():
     choice1 = (str(input(
