@@ -47,3 +47,9 @@ def function():
         pickle.dump(contactlist, contactbookopen)
         contactbookopen.close()
         print("The contact was successfully added")
+    elif choice1 == "3":
+        contactbookopen = open("contactbook.pkl", 'wb')
+        firstname = cleanword(
+            str(input("Enter the first name of the contact: ")))
+        del contactlist[firstname]
+        print("The contact was successfully deleted")
